@@ -62,7 +62,7 @@ let num24 = num20 - num21;
 document.getElementById("demo8.11").innerHTML = num24;
 
 
-//NaN: no es un número
+//NaN: not a number
 let num25 = 100 / "Colombia";
 document.getElementById("demo8.12").innerHTML = num25;
 document.getElementById("demo8.13").innerHTML = isNaN(num25);
@@ -190,7 +190,7 @@ parseInt(true);
 
 
 //3. parseFloat(), convierte la cadena en un número float
-document.getElementById("demo8.27").innerHTML = 
+document.getElementById("demo8.28").innerHTML = 
 parseFloat("-21") + "<br>" +
 typeof parseFloat("-11") + "<br>" +
 parseFloat("-22.33") + "<br>" +
@@ -203,7 +203,24 @@ parseFloat("Esteban") + "<br>" +
 parseFloat(true);
 
 
+//Máximo valor de JS
+let limiteSup = Number.MAX_VALUE;
+document.getElementById("demo8.29").innerHTML = limiteSup;
 
 
+//Minimo valor de JS
+let limiteInf = Number.MIN_VALUE;
+document.getElementById("demo8.30").innerHTML = limiteInf;
+
+//POSITIVE_INFINITY
+let limiteSup1 = Number.POSITIVE_INFINITY;
+document.getElementById("demo8.31").innerHTML = limiteSup1;
+
+//NEGATIVE_INFINITY
+let limiteInf1 = Number.NEGATIVE_INFINITY;
+document.getElementById("demo8.32").innerHTML = limiteInf1;
 
 
+//Las propiedades numéricas no se pueden usar en variables
+let num40 = 6;
+document.getElementById("demo8.33").innerHTML = num40.MAX_VALUE;
