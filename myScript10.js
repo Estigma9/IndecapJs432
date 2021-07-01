@@ -43,7 +43,7 @@ document.getElementById("demo10.4").innerHTML = usuario.primerNombre + " es " + 
 
 //Eliminar una Propiedad
 delete usuario.colorOjos;
-document.getElementById("demo10.4").innerHTML = usuario.primerNombre + " tiene " + usuario.colorOjos;
+document.getElementById("demo10.5").innerHTML = usuario.primerNombre + " tiene " + usuario.colorOjos;
 
 let texto101 = "";
 
@@ -51,7 +51,7 @@ for (let key1 in usuario) {
     texto101 = texto101 + usuario[key1] + " ";    
 }
 
-document.getElementById("demo10.5").innerHTML = texto101;
+document.getElementById("demo10.6").innerHTML = texto101;
 
 
 //Objetos Anidados
@@ -71,7 +71,7 @@ let usuario3 = {
     }
 };
 
-document.getElementById("demo10.6").innerHTML = usuario3.instruMusicales.instrumento5;
+document.getElementById("demo10.7").innerHTML = usuario3.instruMusicales.instrumento5;
 
 
 //Objetos con Matrices
@@ -96,7 +96,7 @@ for (let i in usuario4.carros) {
     }   
 }
 
-document.getElementById("demo10.7").innerHTML = texto102;
+document.getElementById("demo10.8").innerHTML = texto102;
 
 
 //Métodos
@@ -113,7 +113,7 @@ let usuario5 = {
     }
 };
 
-document.getElementById("demo10.8").innerHTML = usuario5.nombreCompleto();
+document.getElementById("demo10.9").innerHTML = usuario5.nombreCompleto();
 
 
 //Agregar un Método
@@ -121,7 +121,7 @@ usuario5.nombreEdad = function(){
     return this.primerNombre5 + " tiene " + this.edad5 + " años.";
 }
 
-document.getElementById("demo10.9").innerHTML = "Mi amigo " + usuario5.nombreEdad();
+document.getElementById("demo10.10").innerHTML = "Mi amigo " + usuario5.nombreEdad();
 
 
 //Visualización de los Objetos
@@ -139,20 +139,20 @@ let usuario6 = {
 } 
 };
 
-document.getElementById("demo10.10").innerHTML = usuario6;
-document.getElementById("demo10.11").innerHTML = Object.values(usuario6);
+document.getElementById("demo10.11").innerHTML = usuario6;
+document.getElementById("demo10.12").innerHTML = Object.values(usuario6);
 
 const arregloUsuario = Object.values(usuario6);
-document.getElementById("demo10.12").innerHTML = arregloUsuario;
+document.getElementById("demo10.13").innerHTML = arregloUsuario;
 
 //Visualización con JSON
 let cadenaUsuario = JSON.stringify(usuario6);
-document.getElementById("demo10.13").innerHTML = cadenaUsuario;
+document.getElementById("demo10.14").innerHTML = cadenaUsuario;
 
-document.getElementById("demo10.14").innerHTML = typeof cadenaUsuario;
+document.getElementById("demo10.15").innerHTML = typeof cadenaUsuario;
 
 usuario6.nombreCompleto6 = usuario6.nombreCompleto6.toString();
-document.getElementById("demo10.15").innerHTML = JSON.stringify(usuario6);
+document.getElementById("demo10.16").innerHTML = JSON.stringify(usuario6);
 
 
 //Accesores de Objetos Getter y Setter
@@ -171,7 +171,7 @@ let usuario7 = {
     }  
 };
 
-document.getElementById("demo10.16").innerHTML = usuario7.idiom;
+document.getElementById("demo10.17").innerHTML = usuario7.idiom;
 
 //set
 let usuario8 = {
@@ -190,6 +190,48 @@ let usuario8 = {
 
 usuario8.lengua = "Frances";
 
-document.getElementById("demo10.17").innerHTML = usuario8.idioma;
+document.getElementById("demo10.18").innerHTML = usuario8.idioma;
+
+
+//Constructores
+//Función constructora
+function Usuarios(first, last, age, eyes){
+    //Propiedades
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eyes;
+    this.nationality = "Islandes"
+
+    //Métodos
+    this.fullName = function(){
+        return this.firstName + " " + this.lastName;
+    }
+}
+
+//Crear el Objeto
+const miAbuela = new Usuarios("Helena", "Hernández", 80, "Azules");
+
+document.getElementById("demo10.19").innerHTML = 
+"Mi abuela es " + miAbuela.firstName + " " + miAbuela.lastName + " y tiene " + miAbuela.age + " años.";
+
+//Agregar un metodo a mi objeto
+miAbuela.fullName = function(){
+    return this.firstName + " " + this.lastName;
+}
+
+document.getElementById("demo10.20").innerHTML = 
+"Mi abuela es " + miAbuela.fullName();
+
+//Agregar propiedad al constructor
+//No funciona igual que con un Objeto
+Usuarios.nationality = "Noruega";
+
+miAmigo = new Usuarios("John", "Arboleda", 41, "Cafe");
+
+document.getElementById("demo10.21").innerHTML = 
+"Mi amigo " + miAmigo.firstName + " " + miAmigo.lastName + " es de " + miAmigo.nationality;
+
+document.getElementById("demo10.22").innerHTML = miAmigo.fullName();
 
 

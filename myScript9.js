@@ -95,7 +95,7 @@ function agregarFruta2(){
 
 //Advertencia. Huecos indefinidos en la matriz
 const fruit4 = ["Duraznos", "Piñas", "Peras", "Uvas"];
-fruit4[8] = "Arandanos"
+fruit4[8] = "Arandanos";
 
 let txt3 = "<ul>";
 
@@ -108,7 +108,7 @@ document.getElementById("demo9.18").innerHTML = txt3;
 
 
 //Identificar una matriz o un objeto
-instituto = "Indecap"
+instituto = "Indecap";
 document.getElementById("demo9.19").innerHTML = typeof fruit4;
 document.getElementById("demo9.20").innerHTML = Array.isArray(fruit4);
 document.getElementById("demo9.21").innerHTML = Array.isArray(instituto);
@@ -185,7 +185,7 @@ document.getElementById("demo9.43").innerHTML = girls2;
 
 
 //Cortar una matriz slice()
-const subGrupo = miGrupo.slice(4)
+const subGrupo = miGrupo.slice(4);
 document.getElementById("demo9.44").innerHTML = subGrupo;
 
 const subGrupo1 = miGrupo.slice(1, 3)
@@ -197,7 +197,7 @@ document.getElementById("demo9.45").innerHTML = subGrupo1;
 const clase = ["José", "Brandon", "Cristian", "Luisa", "Lina", "Juliana"];
 document.getElementById("demo9.46").innerHTML = clase;
 
-function ordeanrAsc(){
+function ordenarAsc(){
     clase.sort();
     document.getElementById("demo9.47").innerHTML = clase;
 }
