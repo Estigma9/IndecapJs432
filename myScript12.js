@@ -1,3 +1,4 @@
+//Esta función me valida los datos de entrada del formulario
 
 function validarDatos(){
     let nombre = document.forms["inscripcion"]["nombreCompleto"].value;
@@ -6,6 +7,3 @@ function validarDatos(){
         return false;
     }
 }
-
-
-

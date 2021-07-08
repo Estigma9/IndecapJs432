@@ -136,7 +136,7 @@ let usuario6 = {
    //Métodos
    nombreCompleto6: function(){
     return this.primerNombre6 + " " + this.apellido6;
-} 
+   } 
 };
 
 document.getElementById("demo10.11").innerHTML = usuario6;
@@ -188,7 +188,7 @@ let usuario8 = {
     }  
 };
 
-usuario8.lengua = "Frances";
+usuario8.lengua = "Francés";
 
 document.getElementById("demo10.18").innerHTML = usuario8.idioma;
 
@@ -201,13 +201,13 @@ function Usuarios(first, last, age, eyes){
     this.lastName = last;
     this.age = age;
     this.eyeColor = eyes;
-    this.nationality = "Islandes"
+    this.nationality = "Islandes";
 
     //Métodos
     this.fullName = function(){
         return this.firstName + " " + this.lastName;
     }
-}
+};
 
 //Crear el Objeto
 const miAbuela = new Usuarios("Helena", "Hernández", 80, "Azules");
@@ -215,10 +215,10 @@ const miAbuela = new Usuarios("Helena", "Hernández", 80, "Azules");
 document.getElementById("demo10.19").innerHTML = 
 "Mi abuela es " + miAbuela.firstName + " " + miAbuela.lastName + " y tiene " + miAbuela.age + " años.";
 
-//Agregar un metodo a mi objeto
+//Agregar un método a mi objeto
 miAbuela.fullName = function(){
     return this.firstName + " " + this.lastName;
-}
+};
 
 document.getElementById("demo10.20").innerHTML = 
 "Mi abuela es " + miAbuela.fullName();

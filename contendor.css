@@ -32,3 +32,22 @@
     height: 90px;
 }
 
+#miDivi1, #miDivi2 {
+    background-color: coral;
+    padding: 50px;
+}
+
+#demo1113, #demo1114 {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid;
+    font-size: 20px;
+}
+
+#miDivi3 {
+    background-color: forestgreen;
+    border: 1px solid;
+    padding: 50px;
+    color:blue;
+    font-size: 20px;
+}

@@ -11,6 +11,7 @@
 </head>
 
 <body onload="cookiesCargadas()">
+<!-- <body onload="mensaje()"> -->
     
     <p id="demo">Somos un parrafo</p>
     <button type="button" onclick="cambio()">Click Me!</button>
@@ -285,11 +286,39 @@
     <br>
     <img id="bombillo" onmousedown="prender()" onmouseup="apagar()" src="imagenes/pic_bulboff.gif">
     <p>Click sostenido sobre el bombillo </p>
+    <br>
+    <br>
+    <button id="miBtn">Pruebame</button>
+    <button id="miBtn2">Pruebame de nuevo</button>
+    <button id="miBtn3">Prueba loca</button>
     <p id="demo11.11"></p>
     <p id="demo11.12"></p>
-    <p id="demo11.13"></p>
-    <p id="demo11.14"></p>
+    <button id="miBtn4">Matemáticas</button>
+    <br>
+    <br>
+    <br>
+    <h2>JavaScript addEventListener() tipos de propagación</h2>
+    <div id="miDivi1">
+        <h2>Bubbling</h2>
+        <p id="demo1113">Click me!!!</p>
+    </div>
+    <br>
+    <br>
+    <div id="miDivi2">
+        <h2>Capturing</h2>
+        <p id="demo1114">Click me!!!</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="miDivi3">
+        <p>Este elemento div tiene un evento onmousemove, muestra un numero aleatorio cada vez que se mueve el mouse dentro del campo verde.</p>
+        
+        <p>Haga click en el botón para eliminar el controloador de eventos del div.</p>
+        <button onclick="removerMovimiento()" id="miBtn5">Remover</button>
+    </div>
     <p id="demo11.15"></p>
+
     <br>
     <br>
     <br>
