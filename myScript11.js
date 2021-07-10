@@ -44,9 +44,10 @@ document.getElementById("demo11.6").style.fontFamily = "Arial";
 document.getElementById("demo11.6").style.fontSize = "larger";
 
 
-//Cambiar estilo CSS con un evento
+//Cambiar estilos CSS con un evento
 function danger(){
     document.getElementById("demo11.7").style.color = "red";
+    document.getElementById("demo11.7").style.fontSize = "larger";
 }
 
 //Visibilidad
@@ -83,7 +84,7 @@ function mover(){
 //Eventos JavaScript HTML DOM
 //Haciendo click en el texto
 function cambio(){
-    document.getElementById("demo11.9").innerHTML = "Los borraste."
+    document.getElementById("demo11.9").innerHTML = "Los borraste.";
 }
 
 
@@ -137,17 +138,17 @@ function resaltar(obj){
 
 //Ejmplo 2 onmousedown y onmouseup
 function prender(){
-    document.getElementById("bombillo").src = "imagenes/pic_bulbon.gif"
+    document.getElementById("bombillo").src = "imagenes/pic_bulbon.gif";
 }
 
 function apagar(){
-    document.getElementById("bombillo").src = "imagenes/pic_bulboff.gif"
+    document.getElementById("bombillo").src = "imagenes/pic_bulboff.gif";
 }
 
 //Ejemplo 2 onload
 //Cambiar la funcion del body onload
 function mensaje(){
-    alert("Este es un mensaje que sale cuando la pagina se carga, usando el evento onload"); 
+    alert("Este es un mensaje que sale cuando la página se carga, usando el evento onload"); 
 };
 
 
@@ -247,7 +248,4 @@ function removerMovimiento(){
 }
 
 document.getElementById("miDivi3").addEventListener("mousemove", mathMove);
-
-
-
 
