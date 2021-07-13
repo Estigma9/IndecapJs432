@@ -206,8 +206,8 @@ function sizeMath(){
 window.addEventListener("resize", sizeMath);
 
 
-//Ejemplo 5, pasar parametros al controlador
-function miOperation(a, b){
+//Ejemplo 5, pasar parametros al controlador de eventos
+function myOperation(a, b){
     document.getElementById("demo11.13").innerHTML = a * b;
 };
 
@@ -215,12 +215,12 @@ let valor1 = 5;
 let valor2 = 7;
 
 document.getElementById("miBtn4").addEventListener("click", function(){
-    miOperation(valor1, valor2);
+    myOperation(valor1, valor2);
 });
 
 
 //Ejemplo 6, Bubbling y Capturing
-document.getElementById("demo1113").addEventListener("click", function(){
+document.getElementById("demo1114").addEventListener("click", function(){
     alert("Diste click en el elemento BLANCO, burbujeo");
 }, false);
 
@@ -228,7 +228,7 @@ document.getElementById("miDivi1").addEventListener("click", function(){
     alert("Diste click en el elemento NARANJA, burbujeo");
 }, false);
 
-document.getElementById("demo1114").addEventListener("click", function(){
+document.getElementById("demo1115").addEventListener("click", function(){
     alert("Diste click en el elemento BLANCO, captura");
 }, true);
 
@@ -240,7 +240,7 @@ document.getElementById("miDivi2").addEventListener("click", function(){
 //Ejemplo 7, remover el controlador. removeEventListener()
 
 function mathMove(){
-    document.getElementById("demo11.15").innerHTML = Math.random();
+    document.getElementById("demo11.16").innerHTML = Math.random();
 };
 
 function removerMovimiento(){
